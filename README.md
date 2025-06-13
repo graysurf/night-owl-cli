@@ -77,11 +77,19 @@ When in doubt: **install one tool at a time by following the steps below.**
    features = night-owl
    ```
 
+![Preview](./screenshots/delta-preview.png)
+
+---
+
 ### 🐱 bat
 
 1. Copy `bat/Night-Owl.tmTheme` to `~/.config/bat/themes/`
 2. Run: `bat cache --build`
 3. Set theme: `export BAT_THEME="Night-Owl"`
+
+![Preview](./screenshots/bat-preview.png)
+
+---
 
 ### 🛁 k9s
 
@@ -93,6 +101,10 @@ When in doubt: **install one tool at a time by following the steps below.**
      skin: night-owl
    ```
 
+![Preview](./screenshots/k9s-preview.png)
+
+---
+
 ### 🧬 fzf
 
 1. Source the file in your `.zshrc`:
@@ -101,20 +113,36 @@ When in doubt: **install one tool at a time by following the steps below.**
    source "$ZDOTDIR/tools/fzf-night-owl.zsh"
    ```
 
+![Preview](./screenshots/fzf-preview.png)
+
+---
+
 ### 🔮 iterm2
 
 1. Go to `Preferences → Profiles → Colors → Color Presets... → Import...`
 2. Select `iterm2/Night-Owl.itermcolors`
 3. Apply the theme from the Presets dropdown
 
+![Preview](./screenshots/iterm2-preview.png)
+
+---
+
 ### 🧪 tmux
 
 1. Source `tmux/.tmux.conf` or merge into your own `.tmux.conf`
 2. Reload: `tmux source-file ~/.tmux.conf`
 
+![Preview](./screenshots/tmux-preview.png)
+
+---
+
 ### 🚀 starship
 
 1. Replace or merge into `~/.config/starship.toml`
+
+![Preview](./screenshots/starship-preview.png)
+
+---
 
 ## 🗑️ Uninstall Instructions
 
