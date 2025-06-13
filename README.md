@@ -46,6 +46,12 @@ night-owl-cli/
 └── README.md
 ```
 
+### iTerm2
+
+1. Go to `Preferences → Profiles → Colors → Color Presets... → Import...`
+2. Select `iterm/Night-Owl.itermcolors`
+3. Apply the theme in Color Presets dropdown
+
 ## ✅ Licensing
 
 MIT License. Theme color values adapted from [Night Owl VSCode theme](https://vscodethemes.com/e/sdras.night-owl/night-owl) by Sarah Drasner.
