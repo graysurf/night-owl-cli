@@ -8,7 +8,6 @@ This project brings Night Owl's signature cool tones and soft contrasts to your 
 - 🐱 `bat` – Syntax-highlighting cat replacement
 - 📡 `k9s` – Kubernetes TUI client
 - 🧬 `fzf` – Fuzzy finder with preview integration
-- 🗂️ `lsd` – Modern `ls` with icon and color support
 - 🔮 `iterm2` – Terminal emulator color scheme
 - 🧪 `tmux` – Status line and pane border theming
 - 🚀 `starship` – Minimal prompt with semantic color cues
@@ -32,17 +31,14 @@ night-owl-cli/
 │   └── night-owl.yaml
 ├── fzf/
 │   └── fzf-night-owl.zsh
-├── lsd/
-│   └── config.yaml
 ├── iterm2/
-│   └── Night Owl.itermcolors
+│   └── Night-Owl.itermcolors
 ├── tmux/
 │   └── .tmux.conf
 ├── starship/
 │   └── starship.toml
 ├── install.sh
-├── screenshots/
-│   └── preview.png / demo.gif
+|
 └── README.md
 ```
 
