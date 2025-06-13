@@ -27,7 +27,7 @@ night-owl-cli/
 ├── delta/
 │   └── night-owl-delta.ini
 ├── bat/
-│   └── Night-Owl-Lowlight.tmTheme
+│   └── Night-Owl.tmTheme
 ├── k9s/
 │   └── night-owl.yaml
 ├── fzf/
