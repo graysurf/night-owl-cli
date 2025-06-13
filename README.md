@@ -40,17 +40,58 @@ night-owl-cli/
 │   └── .tmux.conf
 ├── starship/
 │   └── starship.toml
-├── install.sh  # Optional one-liner setup
+├── install.sh
 ├── screenshots/
 │   └── preview.png / demo.gif
 └── README.md
 ```
 
-### iTerm2
+## 🔧 Setup Instructions
 
+### 🐙 delta
+1. Copy `delta/night-owl-delta.ini` to `~/.config/delta/themes/night-owl.ini`
+2. Add the following to `~/.gitconfig`:
+
+   ```ini
+   [delta]
+   features = night-owl
+   ```
+
+### 🐱 bat
+1. Copy `bat/Night-Owl-Lowlight.tmTheme` to `~/.config/bat/themes/`
+2. Run: `bat cache --build`
+3. Set theme: `export BAT_THEME="Night-Owl-Lowlight"`
+
+### 📡 k9s
+1. Copy `k9s/night-owl.yaml` to `~/.k9s/skins/night-owl.yaml`
+2. In `~/.k9s/config.yaml`, set:
+
+   ```yaml
+   k9s:
+     skin: night-owl
+   ```
+
+### 🧬 fzf
+1. Source the file in your `.zshrc`:
+
+   ```sh
+   source "$ZDOTDIR/tools/fzf-night-owl.zsh"
+   ```
+
+### 🗂️ lsd
+1. Replace or merge `lsd/config.yaml` into `~/.config/lsd/config.yaml`
+
+### 🔮 iterm2
 1. Go to `Preferences → Profiles → Colors → Color Presets... → Import...`
-2. Select `iterm/Night-Owl.itermcolors`
+2. Select `iterm2/Night Owl.itermcolors`
 3. Apply the theme in Color Presets dropdown
+
+### 🧪 tmux
+1. Source `tmux/.tmux.conf` or merge into your own `.tmux.conf`
+2. Reload tmux config: `tmux source-file ~/.tmux.conf`
+
+### 🚀 starship
+1. Replace `~/.config/starship.toml` with `starship/starship.toml` or merge them
 
 ## ✅ Licensing
 
