@@ -1,0 +1,135 @@
+# -----------------------------------------------------------------------------
+# Night Owl skin (Monokai structure)
+# -----------------------------------------------------------------------------
+
+# Styles...
+foreground: &foreground "#d6deeb"
+background: &background "default"
+backgroundOpaque: &backgroundOpaque "#011627"
+magenta: &magenta "#f78c6c"
+orange: &orange "#ffcb6b"
+lightBlue: &lightBlue "#7fdbca"
+blue: &blue "#82aaff"
+darkBlue: &darkBlue "#1d3b53"
+green: &green "#addb67"
+purple: &purple "#c792ea"
+yellow: &yellow "#ecc48d"
+darkGray: &darkGray "#637777"
+
+# Skin...
+k9s:
+  body:
+    fgColor: *foreground
+    bgColor: *background
+    logoColor: *purple
+    logoColorMsg: *foreground
+    logoColorInfo: *lightBlue
+    logoColorWarn: *orange
+    logoColorError: *magenta
+  prompt:
+    fgColor: *foreground
+    bgColor: *background
+    suggestColor: *darkGray
+  info:
+    fgColor: *magenta
+    sectionColor: *yellow
+  help:
+    fgColor: *foreground
+    bgColor: *background
+    keyColor: *green
+    numKeyColor: *green
+    sectionColor: *blue
+  dialog:
+    fgColor: *yellow
+    bgColor: *background
+    buttonFgColor: *foreground
+    buttonBgColor: *background
+    buttonFocusFgColor: *foreground
+    buttonFocusBgColor: *purple
+    labelFgColor: *magenta
+    fieldFgColor: *darkBlue
+  frame:
+    border:
+      fgColor: *darkGray
+      focusColor: *darkGray
+    menu:
+      fgColor: *foreground
+      keyColor: *magenta
+      numKeyColor: *green
+    crumbs:
+      fgColor: *yellow
+      bgColor: *backgroundOpaque
+      activeColor: *purple
+    status:
+      newColor: *blue
+      modifyColor: *purple
+      addColor: *green
+      pendingColor: *orange
+      errorColor: *magenta
+      highlightColor: *blue
+      killColor: *magenta
+      completedColor: *darkBlue
+    title:
+      fgColor: *purple
+      bgColor: *background
+      highlightColor: *yellow
+      counterColor: *green
+      filterColor: *orange
+  views:
+    charts:
+      bgColor: *background
+      dialBgColor: *background
+      chartBgColor: *backgroundOpaque
+      defaultDialColors:
+        - *blue
+        - *magenta
+      defaultChartColors:
+        - *blue
+        - *magenta
+      resourceColors:
+        batch/v1/jobs:
+          - *blue
+          - *magenta
+        v1/persistentvolumes:
+          - *blue
+          - *magenta
+        cpu:
+          - *blue
+          - *magenta
+        mem:
+          - *blue
+          - *magenta
+        v1/events:
+          - *blue
+          - *magenta
+        v1/pods:
+          - *blue
+          - *magenta
+    table:
+      fgColor: *foreground
+      bgColor: *background
+      cursorFgColor: *foreground
+      cursorBgColor: *backgroundOpaque
+      markColor: *magenta
+      header:
+        fgColor: *foreground
+        bgColor: *backgroundOpaque
+        sorterColor: *magenta
+    xray:
+      fgColor: *foreground
+      bgColor: *background
+      cursorColor: *blue
+      cursorTextColor: *foreground
+      graphicColor: *blue
+    yaml:
+      keyColor: *green
+      colonColor: *magenta
+      valueColor: *foreground
+    logs:
+      fgColor: *foreground
+      bgColor: *background
+      indicator:
+        fgColor: *foreground
+        bgColor: *backgroundOpaque
+        toggleOnColor: *green
+        toggleOffColor: *magenta
