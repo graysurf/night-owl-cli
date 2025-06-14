@@ -70,14 +70,22 @@ When in doubt: **install one tool at a time by following the steps below.**
 ### 🐙 delta
 
 1. Copy `delta/night-owl-delta.ini` to `~/.config/delta/themes/night-owl.ini`
-2. In `~/.gitconfig`:
+2. In `~/.gitconfig`, include the theme config:
 
    ```ini
+   [include]
+       path = ~/.config/delta/themes/night-owl.ini
+
    [delta]
-   features = night-owl
+       syntax-theme = "Night-Owl"
+       features = "night-owl"
    ```
 
+> ✅ **Note:** Do **not** manually copy the `[delta "night-owl"]` block into `~/.gitconfig`.
+> Use `[include]` instead to ensure full compatibility with delta's features mechanism.
+
 ![Preview](./screenshots/delta-preview.png)
+
 
 ---
 
