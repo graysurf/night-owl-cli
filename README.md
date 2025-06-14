@@ -147,6 +147,11 @@ When in doubt: **install one tool at a time by following the steps below.**
 ### 🚀 starship
 
 1. Replace or merge into `~/.config/starship.toml`
+2. Place `random_emoji_cmd.sh` at `~/.config/zsh/tools/random_emoji_cmd.sh`  
+   (or update the path in `starship.toml` if you use a different location)
+
+> This script generates a random emoji for each prompt refresh 🎲  
+> Don’t forget to `chmod +x` it!
 
 ![Preview](./screenshots/starship-preview.png)
 
