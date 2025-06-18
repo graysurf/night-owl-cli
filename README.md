@@ -38,10 +38,10 @@ night-owl-cli/
 ├── tmux/
 │   └── .tmux.conf
 ├── starship/
-│   └── starship.toml
+│   ├── starship.toml
+│   └── random_emoji_cmd.sh
 │
-├── install.sh
-└── README.md
+└── install.sh
 ```
 
 ## 🔧 Setup Instructions
