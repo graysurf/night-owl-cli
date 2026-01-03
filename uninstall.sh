@@ -58,6 +58,7 @@ log "🌘 Uninstalling Night Owl CLI Theme..."
 # delta
 if command -v delta &>/dev/null; then
   del "$XDG_CONFIG_HOME/delta/themes/night-owl.ini"
+  restore_bak "$XDG_CONFIG_HOME/delta/themes/night-owl.ini"
 else
   log "⚠️ delta not installed, skipping"
 fi
@@ -69,9 +70,18 @@ else
   log "⚠️ bat not installed, skipping"
 fi
 
+# eza
+if command -v eza &>/dev/null; then
+  del "$XDG_CONFIG_HOME/eza/theme.yml"
+  restore_bak "$XDG_CONFIG_HOME/eza/theme.yml"
+else
+  log "⚠️ eza not installed, skipping"
+fi
+
 # k9s
 if command -v k9s &>/dev/null; then
   del "$XDG_CONFIG_HOME/k9s/skins/night-owl.yaml"
+  restore_bak "$XDG_CONFIG_HOME/k9s/skins/night-owl.yaml"
 else
   log "⚠️ k9s not installed, skipping"
 fi
@@ -79,6 +89,7 @@ fi
 # fzf
 if command -v fzf &>/dev/null; then
   del "$HOME/.config/zsh/tools/fzf-night-owl.zsh"
+  restore_bak "$HOME/.config/zsh/tools/fzf-night-owl.zsh"
 else
   log "⚠️ fzf not installed, skipping"
 fi
