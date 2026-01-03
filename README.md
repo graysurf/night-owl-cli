@@ -6,6 +6,7 @@ This project brings Night Owl's signature cool tones and soft contrasts to your 
 
 - 🐙 `delta` – Git diff viewer
 - 🐱 `bat` – Syntax-highlighting cat replacement
+- 🦉 `eza` – Modern `ls` replacement
 - 🛁 `k9s` – Kubernetes TUI client
 - 🧬 `fzf` – Fuzzy finder with preview integration
 - 🔮 `iterm2` – Terminal emulator color scheme
@@ -29,6 +30,8 @@ night-owl-cli/
 │   └── night-owl-delta.ini
 ├── bat/
 │   └── Night-Owl.tmTheme
+├── eza/
+│   └── night-owl.yml
 ├── k9s/
 │   └── night-owl.yaml
 ├── fzf/
@@ -99,6 +102,19 @@ When in doubt: **install one tool at a time by following the steps below.**
 
 ---
 
+### 🦉 eza
+
+1. Copy `eza/night-owl.yml` to `~/.config/eza/theme.yml`
+2. Set config directory (e.g. in your `.zshrc` / `.bashrc`):
+
+   ```sh
+   export EZA_CONFIG_DIR=~/.config/eza
+   ```
+
+![Preview](./screenshots/eza-preview.png)
+
+---
+
 ### 🛁 k9s
 
 1. Copy `k9s/night-owl.yaml` to `~/.k9s/skins/night-owl.yaml`
@@ -166,6 +182,7 @@ To remove all installed Night Owl configurations, run:
 ```
 
 This will:
+
 - Remove all Night Owl theme/config files installed by install.sh
 - Restore any .bak backups that were created during installation
 
