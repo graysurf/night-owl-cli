@@ -96,6 +96,13 @@ else
   log_skip "delta not found, skipping"
 fi
 
+# ───── git ─────
+if command -v git &>/dev/null; then
+  install_file "$ROOT_DIR/git/night-owl-colors.gitconfig" "$XDG_CONFIG_HOME/git/night-owl-colors.gitconfig" "git colors"
+else
+  log_skip "git not found, skipping"
+fi
+
 # ───── bat ─────
 if command -v bat &>/dev/null; then
   if [[ "$DRY_RUN" == true ]]; then

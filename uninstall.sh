@@ -63,6 +63,14 @@ else
   log "⚠️ delta not installed, skipping"
 fi
 
+# git
+if command -v git &>/dev/null; then
+  del "$XDG_CONFIG_HOME/git/night-owl-colors.gitconfig"
+  restore_bak "$XDG_CONFIG_HOME/git/night-owl-colors.gitconfig"
+else
+  log "⚠️ git not installed, skipping"
+fi
+
 # bat
 if command -v bat &>/dev/null; then
   del "$XDG_CONFIG_HOME/bat/themes/Night-Owl.tmTheme"

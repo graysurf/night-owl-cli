@@ -1,0 +1,20 @@
+[color]
+	ui = true
+
+[color "decorate"]
+	branch = "bold #c792ea"
+	remoteBranch = "bold #82aaff"
+	tag = "bold #ecc48d"
+	HEAD = "bold #7fdbca"
+	stash = "bold #f78c6c"
+	grafted = "#637777"
+
+[color "branch"]
+	current = "bold #c792ea"
+	local = "#7fdbca"
+	remote = "#82aaff"
+	upstream = "#ecc48d"
+	plain = "#d6deeb"
+
+[log]
+	graphColors = "#82aaff,#c792ea,#7fdbca,#ecc48d,#f78c6c,#addb67"

@@ -5,6 +5,7 @@ A fully synchronized CLI color theme based on the famous **Night Owl** palette, 
 This project brings Night Owl's signature cool tones and soft contrasts to your favorite command-line tools, including:
 
 - 🐙 `delta` – Git diff viewer
+- 🌳 `git` – log/branch colors
 - 🐱 `bat` – Syntax-highlighting cat replacement
 - 🦉 `eza` – Modern `ls` replacement
 - 🛁 `k9s` – Kubernetes TUI client
@@ -28,6 +29,8 @@ night-owl-cli/
 │
 ├── delta/
 │   └── night-owl-delta.ini
+├── git/
+│   └── night-owl-colors.gitconfig
 ├── bat/
 │   └── Night-Owl.tmTheme
 ├── eza/
@@ -89,6 +92,25 @@ When in doubt: **install one tool at a time by following the steps below.**
 
 ![Preview](./screenshots/delta-preview.png)
 
+---
+
+### 🌳 git
+
+1. Copy `git/night-owl-colors.gitconfig` to `~/.config/git/night-owl-colors.gitconfig`
+2. In `~/.gitconfig`, include the config:
+
+   ```ini
+   [include]
+       path = ~/.config/git/night-owl-colors.gitconfig
+   ```
+
+3. Try:
+
+   ```bash
+   git log --graph --decorate --oneline --all
+   ```
+
+![Preview](./screenshots/git-preview.png)
 
 ---
 
@@ -194,6 +216,8 @@ To preview what would be removed without making changes:
 
 ⚠️ iTerm2 color presets must be removed manually:
   Preferences → Profiles → Colors → Color Presets... → Remove 'Night Owl'
+
+⚠️ If you added a Git `[include] path = ~/.config/git/night-owl-colors.gitconfig`, remove it manually.
 
 This script only affects files created by install.sh. If you've merged configs manually,
 please review them before running uninstall.
