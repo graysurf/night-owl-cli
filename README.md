@@ -224,7 +224,8 @@ please review them before running uninstall.
 
 ## ✅ Licensing
 
-MIT License. Theme color values adapted from [Night Owl VSCode theme](https://github.com/sdras/night-owl-vscode-theme) by Sarah Drasner.
+MIT © graysurf. See [LICENSE](LICENSE).
+Theme color values adapted from [Night Owl VSCode theme](https://github.com/sdras/night-owl-vscode-theme) by Sarah Drasner.
 
 This project is a CLI-oriented adaptation for personal and community use.
 
