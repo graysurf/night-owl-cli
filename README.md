@@ -222,9 +222,11 @@ To preview what would be removed without making changes:
 This script only affects files created by install.sh. If you've merged configs manually,
 please review them before running uninstall.
 
-## ✅ Licensing
+## 🪪 License
 
-MIT © graysurf. See [LICENSE](LICENSE).
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE).
 Theme color values adapted from [Night Owl VSCode theme](https://github.com/sdras/night-owl-vscode-theme) by Sarah Drasner.
 
 This project is a CLI-oriented adaptation for personal and community use.
